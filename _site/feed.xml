@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-12T18:46:58-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">A few things to learn from an API expert</title><link href="http://localhost:4000/learn/api/2022/09/10/a-few-things-to-learn-from-an-api-expert.html" rel="alternate" type="text/html" title="A few things to learn from an API expert" /><published>2022-09-10T07:32:02-07:00</published><updated>2022-09-10T07:32:02-07:00</updated><id>http://localhost:4000/learn/api/2022/09/10/a-few-things-to-learn-from-an-api-expert</id><content type="html" xml:base="http://localhost:4000/learn/api/2022/09/10/a-few-things-to-learn-from-an-api-expert.html"><![CDATA[<p>This article illustrates several things we can learn from an API expert. You can apply similar methodologies to learn from experts in other industries as well.</p>
+
+<p>Before I tell this tale, I want to make it clear I am not looking to disparage anyone mentioned in this article. This is purely my opinion and does not reflect my employers view.</p>
+
+<p>If you’re working on <a href="https://www.ibm.com/cloud/learn/api">Application Programming Interfaces (API)</a>, you should be familiar with the name <a href="https://twitter.com/kinlane">“Kin Lane”</a>, which appears in many articles, interviews and social networks related to API.</p>
+
+<p>Many articles and interviews label “Kin Lane” as an API expert:</p>
+
+<ul>
+  <li>
+    <p><em>World-renowned experts from industry and academia, including David Berlind (Chief Editor of Programmable Web), Mehdi Medjaoui (Co-founder of the APIDays conferences), Kin Lane (the “API evangelist”)</em> (source: <a href="https://digital-strategy.ec.europa.eu/en/library/apis-enablers-digital-transformation-governments">European Commission: APIs as enablers of the digital transformation of governments</a></p>
+  </li>
+  <li>
+    <p><em>I had the pleasure of sitting down with Kin Lane, an API Evangelist, blogger at KinLane.com and API Evangelist, contributor to Programmable Web, and all-around expert in APIs.</em> (source: <a href="https://www.elasticpath.com/blog/the-business-of-apis-interview-with-an-api-evangelist">The Business of APIs: Interview with an API Evangelist</a>)</p>
+  </li>
+  <li>
+    <p><em>Of particular interest was a lecture held by Kin Lane, an API expert, that has tried/reviewed all of the APIs available, which is more than 11 thousand. This lecture, called “The Kin Lane Show” is a dynamic, an amalgam of previous lectures and Kin Lanes own experiences and ideas.</em> (source: <a href="https://medium.com/@VicertInc/vicert-berlin-api-days-2014-ffa8bd54ec71">Vicert @ “Berlin API DAYS 2014”</a>)</p>
+  </li>
+  <li>
+    <p><em>An API expert explains why Postman Collections should be a default part of your API documentation, just like an OpenAPI definition should be a part of API docs.</em> (source: <a href="https://dzone.com/articles/using-postman-to-explore-the-triathlon-api">Using Postman to Explore the Triathlon API</a>. Disclaimer: this article is written by Kin.)</p>
+  </li>
+</ul>
+
+<p>He’s also a high achiever working on <a href="https://web.archive.org/web/20181227020233/http://kinlane.com/projects/">100+ projects</a> and <a href="https://web.archive.org/web/20211017032709/https://apievangelist.com/2019/08/01/about-giving-away-api-knowledge-for-free/">many people such as startup founders, venture capitalists tried to pick his brain</a>.</p>
+
+<p>He’s also good at understanding complex concepts and <a href="https://twitter.com/kinlane/status/1519375035735052293">aced the advanced portion of a computerized test for a big global consulting firm</a>.</p>
+
+<p>That’s awesome. Let’s see what we can learn from this guy.</p>
+
+<h2 id="book-authors">Book Authors</h2>
+
+<p>Let’s start with a book he published. if someone writes a book on certain topics, we will normally assume that person is knowledgeable in these topics. Kin Lane published a book called <a href="https://www.amazon.com/Business-APIs-Kin-Lane/dp/1461113881">“The business of APIs”</a> in 2011. It was highlighted as an achievement:</p>
+
+<p>His profile in the Presidential Innovation Fellows (PIF) program website:</p>
+
+<p><a href="https://presidentialinnovationfellows.gov/fellows/kin-lane/"><img src="/assets/images/pif.png" alt="His profile in the Presidential Innovation Fellows (PIF) program website" /></a></p>
+
+<p>In <a href="https://www.supremecourt.gov/DocketPDF/18/18-956/89487/20190225134131839_18-956_Oracle_v__Google_Computer_Scientists_Amicus_Motion_Brief_FILE.pdf">MOTION FOR LEAVE TO FILE BRIEF OF 78 AMICI CURIAE AND BRIEF OF 78 AMICI CURIAE COMPUTER SCIENTISTS IN SUPPORT OF PETITIONER</a></p>
+
+<p><a href="https://presidentialinnovationfellows.gov/fellows/kin-lane/"><img src="/assets/images/court.png" alt="MOTION FOR LEAVE TO FILE BRIEF OF 78 AMICI CURIAE AND BRIEF OF 78 AMICI CURIAE COMPUTER SCIENTISTS IN SUPPORT OF PETITIONER" /></a></p>
+
+<p>So looks like the book is pretty good, isn’t it?</p>
+
+<p>One can find the reviews of this book on <a href="https://www.amazon.com/Business-APIs-Kin-Lane/dp/1461113881">Amazon</a>, <a href="https://www.goodreads.com/book/show/18214564-business-of-apis">GoodReads</a> and <a href="https://books.google.com/books/about/Business_of_APIs.html?id=WNk0rdib_5YC">Google Books</a>. Unfortunately, most reviews are negative. <a href="https://www.goodreads.com/review/show/4917402583?book_show_action=true&amp;from_review_page=1">This one in GoodReads</a> stands out as it reviews the book chapter by chapter. I understand book reviews can be fake but what about reading it yourself as the book is just 54 pages (with 7+ blank pages) and coming up with your own conclusion? By completing the form at the <a href="https://library.slashdotmedia.com/the-business-of-apis/">Slackdot Media Resource Center</a> (I’m not affiliated with SlashDot Media), you can get a free electronic copy (PDF).</p>
+
+<p>The book is supposed to get <a href="https://web.archive.org/web/20130115154644/http://apievangelist.com/business_of_apis.php">regular updates</a>:</p>
+
+<p><em>“Because the world of APIs is constantly we changing, we will be updating the book regularly, and releasing new versions.”</em></p>
+
+<p>I’ve never seen a second edition of the book in the paperback form or Kindle. Let me know if you find it and I am happy to dive into the updated version to learn more about the business API, hopefully with a real-life example.</p>
+
+<h2 id="work-experience">Work Experience</h2>
+
+<p>To learn more about Kin’s professional background, check out his <a href="https://www.linkedin.com/in/kinlane">LinkedIn profile</a> or <a href="https://web.archive.org/web/20191002081135/https://s3.amazonaws.com/kinlane-productions/kin-lane-resume/Resume-Kin-Lane-API-Evangelist-Summary.pdf">resume (source deleted, Internet Archive)</a>.</p>
+
+<p>It is safe to presume that someone who serves as a director of an API infrastructure for a publicly traded firm is knowledgeable or an expert in API. Kin was previously the director of API infrastructure at F5, which is a listed company with a market cap of ~15 billion USD in Jan 2022. Kin joined F5 as an API architect after stepping back as API Evangelist in <a href="https://web.archive.org/web/20190123164142/https://apievangelist.com/2019/01/22/stepping-back-from-api-evangelist/">Jan 2019 (source deleted, Internet Archive)</a> when the API industry lacked nutrition to financially support his works on apievangelist.com. 9 months later, he joined Postman as the chief evangelist. In <a href="https://youtu.be/pibZF049zqE?t=43">an interview by JSON Schema team</a> in 2022, when asked to talk a bit about himself, Kin said:</p>
+
+<p><em>“I was a director of API infrastructure at f5 networks so I was brought in to map out the existing API landscape and propose and lay the groundwork for what would be the next iteration of in their API journeyfor all of their APIs.”</em></p>
+
+<p>Here is a screen capture with the closed captions:</p>
+
+<p><a href="https://www.youtube.com/watch?v=pibZF049zqE&amp;t=43s"><img src="/assets/images/f5.png" alt="JSON Schema in Production - #2 Kin Lane at F5" /></a></p>
+
+<p>But in <a href="https://www.linkedin.com/in/kinlane">his Linkedin profile</a>, his job tile is API architect. In the <a href="https://www.businesswire.com/news/home/20191120005165/en/Postman-Follows-Successful-Series-B-With-Two-Key-Hires">Postman press release</a>, it also refers him as an API architect:</p>
+
+<p><em>“Lane was most recently an API architect for F5 Networks and an API evangelist at Mimeo.”</em></p>
+
+<p>Here comes the question. Did he get a promotion from a non-director level position to the director in API infrastructure after leaving F5 ? If so how is it even possible? Or he simply forgot to update his resume, in which case Postman didn’t know the promotion either? I thought Postman interviewers or HR should know he is the director of API infrastructure at F5 networks since that was his job during the interview process.</p>
+
+<p>As the keynote speaker of InstructureCon 2013 (Jun 2013), Kin shared a bit more about his background:</p>
+
+<p><em>“<a href="https://youtu.be/Lev-RN-gGOY?t=683">I’m a developer. I’m a recovering IT director. I used to run IT for SAP. And I worked for Google for a while. So I know what it’s like to butt your head up against IT.</a>“</em></p>
+
+<p>But later in the blog post <a href="https://dzone.com/articles/sorry-google-your-programming">“Sorry Google, Your Programming Test Is Not A Valid Measurement Of My Skills”</a>, he mentioned</p>
+
+<p><em>“This is the 3rd round of talks I’ve had with Google while being the API Evangelist, talks that historically go nowhere because of their programming test, which is a super silly aspect of their HR process.”</em></p>
+
+<p><em>“I was straight up with the Google recruiter a couple of weeks ago when she first emailed me, and again when we talked on the phone last week—I do not take programming tests to open up doors for employment conversations, sorry.”</em></p>
+
+<p>I totally respect Kin’s viewpoint in not taking programming tests, even though he’s <a href="https://web.archive.org/web/20160801041440/http://apievangelist.com/2015/04/29/the-technology-business-and-politics-of-apis-via-a-community-driven-api-life-cycle/">fluent in PHP</a> but here comes the question. How did he pass the interview before as he “worked for Google for a while”? In his <a href="https://web.archive.org/web/20191002081135/https://s3.amazonaws.com/kinlane-productions/kin-lane-resume/Resume-Kin-Lane-API-Evangelist-Summary.pdf">resume</a>, there’s no mention of his work experience at Google. Neither “IT director” nor “SAP” are mentioned in his resume. And why these professional experiences — which are undeniably accomplishments in one’s career — were not mentioned in the <a href="https://www.businesswire.com/news/home/20191120005165/en/Postman-Follows-Successful-Series-B-With-Two-Key-Hires">Postman press release</a>?</p>
+
+<p>Later, Google and Kin’s paths crossed again as part of the <a href="https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc.">Google LLC v. Oracle America, Inc. lawsuit</a>. Kin provided a <a href="https://blog.postman.com/google-vs-oracle-supreme-court-api-copyright-decision/">nice summary</a> in a Postman blog post (please make sure you read the comments about different viewpoints too). In his apievangelist.com blog post <a href="https://web.archive.org/web/20210925131704/https://apievangelist.com/2019/11/22/api-copyright-restaurant-menu/">“API Copyright: Restaurant Menu” (22 Nov 2019)</a>, he said:</p>
+
+<p><em>“One of the old concepts I had worked through back in May of 2014, and <strong>was used by Google as part of their argument</strong>, was the notion that your API is just a menu for your organizational digital resources–I wanted to take a fresh look at this concept, and add it to the toolbox for when we head to DC.”</em></p>
+
+<p>In Apr 2021, he wrote a blog post about his <a href="https://web.archive.org/web/20210413212334/https://apievangelist.com/2021/04/13/My-oracle-vs-google-api-copyright-journey/">Oracle vs Google API Copyright Journey</a></p>
+
+<p><em>“I’d say this list represent my work as the API Evangelist well, in that some of it is very notebook ideas, with spelling and grammar mistakes, with others being deeper looks into how we start separate the layers of an API so that we can apply licensing, all the way to some pretty valuable contributions like the API Commons, and <strong>the usage of the restaurant analogy for APIs, which Google’s lawyers used as part of their defense after I provided.</strong>“</em></p>
+
+<p>Did Kin come up with the restaurant menu analogy? His first blog post that mentions “restaurant menu” is <a href="https://web.archive.org/web/20210510193421/https://apievangelist.com/2014/05/23/restaurant-menus-as-analogy-for-api-copyright/">“Restaurant Menus As Analogy For API Copyright”</a>:</p>
+
+<p><em>“One of the interesting conversations that came out of the APIStrat Un-Workshops at Gluecon this week, was the exploration of the analogy of applying copyright to restaurant menus, and applying copyright to APIs. This type of conversations is why 3Scale and API Evangelist support these types of events.</em></p>
+
+<p><em>When you Google the topic of restaurant menu API copyright, you get a wealth of contradictory answers that show the difficulty of applying copyright to menus.”</em></p>
+
+<p>Nowhere in the blog post did he mention he is the one who came up with the analogy. It seems to suggest it’s coming from a conversation with a group of people. As he said, one will get <em>“a wealth of contradictory answers that show the difficulty of applying copyright to menus”</em> with a Google search so looks like this topic/analogy is nothing new (and I’m pretty sure Google lawyers can search for that as well, using Google of course). Based on the information I’ve collected so far, I can not tell if he’s the first one coming up with the idea.</p>
+
+<p>In his <a href="https://www.linkedin.com/in/kinlane">Linkedin profile</a>, he was the advisor at SkyLight Digital but on the <a href="https://skylight.digital/company/about/">company website</a> he’s an API architect:</p>
+
+<p><em>“Kin served as a Presidential Innovation Fellow, and is a world-recognized expert in APIs. Since 2010, he has written over 3,000 articles and spoken at over 50 events on API-related topics. Kin also specializes in software engineering, microservices, data science and engineering, cloud computing, and enterprise software. He lives in California.”</em></p>
+
+<p>Does this imply that he advised SkyLight while also serving as an API architect? Do other employees listed on the SkyLight website serve as company advisers as well?</p>
+
+<p>In 2015, Kin <a href="https://nordicapis.com/walkthrough-apiwares-sapience-api-security-validation-tool/">co-found a company called Apiware.io</a> which offers services for development, management &amp; support of APIs:</p>
+
+<p><em>“Built and maintained by the APIware API development consultancy co-founded by Kin Lane, it’s their first product release, so we’re excited to see what they came up with.”</em></p>
+
+<p>In his Linkedin profile or resume, there is no mention of Apiware.io at all in his job experiences. Some other co-founders did clearly state it in their <a href="https://www.linkedin.com/in/alexandermenzheres?original_referer=">Linkedin profiles</a>.</p>
+
+<p>Kin is probably too busy with his API research and couldn’t find the time to update his resume and Linkedin profile. Still, I’m sure we all can learn something from his career path even though it’s not clearly documented.</p>
+
+<h2 id="education">Education</h2>
+
+<p>Kin honestly tells everyone in his blog he’s a high school dropout. He was already a high achiever back in high school: <a href="https://web.archive.org/web/20220423033639/https://apievangelist.com/2016/11/04/drone-recovery-in-the-attention-economy/">setting up the entire computer lab for his 7th-grade math teacher back in 1983</a> and <a href="https://web.archive.org/web/20220423033639/https://apievangelist.com/2016/11/04/drone-recovery-in-the-attention-economy/">even having a job programming the software used by schools in the State of Oregon in COBOL</a> but eventually, he was kicked out in his senior year and drugs took him on a different path. Luckily, he’s fully recovered and is no longer a drug-addict.</p>
+
+<p>Even though he didn’t have a university degree, <a href="https://classroom20.com/forum/topics/649749:Topic:28?commentId=649749%3AComment%3A21836">he was working on curriculum for the University level, and will be soon trying to adapt to other school levels</a>. He also works closely with the universities, e.g. <a href="https://apievangelist.com/2020/08/13/i-am-giving-a-workshop-on-api-testing-to-computer-science-students-at-tecnolgico-de-monterrey-tomorrow/">giving a workshop on API testing to Computer Science Students at Tecnológico de Monterrey</a> and <a href="https://web.archive.org/web/20220626024039/http://kinlane.com/experiences/">spoke with computer science class at Loyala Marymount Universityin 2012, 2013 and 2014</a>. In Oct 2013, he talked about <a href="https://www.youtube.com/watch?v=NHvW8JUjqXQ">“Access, Interoperability, Privacy and Security Of Technology Will Set The Stage For The Future of Education”</a> at the <a href="https://openva.org/minding-the-future/">Minding the Future conference</a>.</p>
+
+<p>In 2010, he started apievangelist.com, which <a href="https://github.com/kinlane/journey">was kind of a PhD into how much of the web, mobile, and connected device works, as APIs drive almost everything today</a>. In 2019, he found a job at Postman (right before that he was with F5 Networks) after <a href="https://web.archive.org/web/20210802090748/http://apievangelist.com/2019/09/12/i-am-joining-postman-as-their-chief-evangelist/">working on an API PhD for the last 9 years</a>:</p>
+
+<p><em>“I feel like I’ve been working on an API PHD for the last 9 years, have finished my dissertation, and now I’m ready to actually begin applying what I know in the real world.”</em></p>
+
+<p>This is the first time I heard someone self-studying a PhD. To be clear, I’m not against anyone self-studying a PhD, which is just one of the ways to pursue knowledge. Should he at least get a supervisor mentoring his self-studied Ph.D?</p>
+
+<p>In May 2021, he’s one of the <a href="https://www.eff.org/cases/oracle-v-google/amici">32 computer scientists</a> who signed the <a href="https://www.eff.org/cases/oracle-v-google">Amicus Brief Filed By EFF In The Oracle vs. Google API Copyright Case</a>. In his <a href="(https://techcrunch.com/2021/07/01/months-later-were-still-making-sense-of-the-supreme-courts-api-copyright-ruling/)">TechCrunch article</a> on the U.S. Supreme Court’s April 5 ruling in Google LLC v. Oracle America Inc.:</p>
+
+<p><em>“I was one of 83 computer scientists — including fiveTuring Awardwinners and four National Medal of Technology honorees — who signed a Supreme Court amicus briefstating their opposition to the assertion that APIs are copyrightable, while also supporting Google’s right to fair use under the current legal definition.”</em></p>
+
+<p>In his <a href="https://presidentialinnovationfellows.gov/fellows/kin-lane/">Presidential Innovation Fellows profile</a>, he also described himself as a computer scientist and ‘API Evangelist’:</p>
+
+<p><em>“Kin is a computer scientist and ‘API Evangelist’ working to understand the technology, business, and political aspects of Application Programming Interfaces (APIs) and to help share this insight with the world.”</em></p>
+
+<p>I simply assume computer scientists should at least have a degree or something equivalent and at least one publication to computer journals that I couldn’t find any via Google Scholar but clearly my assumption is wrong as a high school dropout simply self-studying a PhD without a degree can get this title.</p>
+
+<p>For those who wants to become a computer scientist, studying a PhD in a university is the traditional way, but just so you know now there’s another proven way and one day you may sign the Supreme Court amicus brief with other computer scientists including Turing Award winners.</p>
+
+<h2 id="research">Research</h2>
+
+<p>One thing that Kin Lane pioneers is his research on “API Lifecycle” which started with 50+ stops such as <a href="https://web.archive.org/web/20160611155733/http://spreadsheets.apievangelist.com/">spreadsheets</a>, <a href="https://web.archive.org/web/20160611155733/http://low.hanging.fruit.apievangelist.com/">“Low Hanging Fruit”</a>, <a href="https://web.archive.org/web/20160611155733/http://realtime.apievangelist.com/">“Real-Time”</a>. He coined the term “API Life Cycle” around <a href="https://web.archive.org/web/20160105105900/http://apievangelist.com/">Jan 2016</a>. Since its inception, he has expanded the API Life Cycle to cover more research areas. <a href="https://web.archive.org/web/20210207002738/https://apievangelist.com/#API-Lifecycle">In Feb 2021</a> the API LifeCycle covered almost 100 stops, including <a href="https://web.archive.org/web/20191222034705/http://blockchain.apievangelist.com/">blockchain</a>, <a href="https://web.archive.org/web/20191222034705/http://machine-learning.apievangelist.com/">machine learning</a>, <a href="https://web.archive.org/web/20191222034705/http://internet-of-things.apievangelist.com/">Internet of Things</a>, and more. Adding the latest trendy technologies and researching these new stops undoubtedly keeps the API lifecycle up-to-date and valuable.</p>
+
+<p>But for some reason, he removed “API Life Cycle” from APIEvanglist.com front page in <a href="https://web.archive.org/web/20210306081529/http://apievangelist.com/">Mar 2021</a>. You can still access his research on API life cycle from the Internet Archive and learn from his research.</p>
+
+<p>He also published <a href="https://web.archive.org/web/20150213204249/https://s3.amazonaws.com/kinlane-productions/whitepapers/api-evangelist-apis-in-the-university-white-paper.pdf">a whitepaper on University API in Aug 2014</a> (28 pages while 10 pages are just logos) so please take a look in case you are interested in University API.</p>
+
+<h2 id="the-presidential-innovation-fellows-pif-program">The Presidential Innovation Fellows (PIF) program</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Presidential_Innovation_Fellows">The Presidential Innovation Fellows (PIF) program</a> brings the innovation economy into government, by pairing talented, diverse technologists and innovators with top civil-servants and change-makers within the federal government to tackle some of our nation’s biggest challenges. According to his Linkedin profile, he joined in Jun 2013 and left in Oct 2013. You can find his profile on the <a href="https://presidentialinnovationfellows.gov/fellows/kin-lane/">PIF official website</a>. Before he joined the program, he already <a href="https://apievangelist.com/2012/10/13/heading-to-washington-dc-to-talk-apis-with-innovation-fellows/">coached some of the PIF (Class of 2012) back in Oct 2012</a>:</p>
+
+<p><em>“I was honored this month to receive an invitation from Todd Park (@todd_park), the U.S. Chief Technology Officer, on behalf of the Presidential Innovation Fellows Program, to come out to Washington DC and spend an afternoon coaching and working with some of the Presidential Innovation Fellows on the Open Data Initiatives project.”</em></p>
+
+<p>That sounds very impressive as PIFs are top innovators from the private sector, non-profits, and academia. I’m sure coaching them is not an easy task.</p>
+
+<p>He didn’t apply for the PIF program. The White House invited him to join instead, according to his presentation <a href="https://youtu.be/RgsBilpTeiU?t=1593">“The API evangelist API journey”</a> in the JRC APIs4DGov Workshop:</p>
+
+<p><em>“… in 2012 I was asked to come do a talk at the WhiteHouse and then I got a call a couple weeks later and said hey would you like to be a presidential innovation fellow and work out with the Obama team and I said sure I guess so and they said well can you be here by Monday and that was Friday at 2:00 so I shaved my beard shaved my hair cut my hair bought a suit and I went to DC and I was a positioned at the Department of Veterans Affairs …“</em></p>
+
+<p>Just so you know the second class of the PIF program <a href="https://en.wikipedia.org/wiki/Presidential_Innovation_Fellows">included 43 fellows selected from over 2000 applicants</a>.</p>
+
+<p>You may wonder why he left after 60 days. He explained with details in his <a href="https://web.archive.org/web/20141122040320/https://kinlane.com/2013/11/15/why-i-exited-my-presidential-innovation-fellowship">(deleted) blog post (2013-11-15)</a>:</p>
+
+<p><em>“After 60 days, I decided to leave the program. The main reason is that Audrey and I couldn’t make ends meet in DC, on what they paid, and after spending our savings to get out there, with no credit cards to operate on, and experiencing the shutdown, and facing another shutdown this winter–it just wasn’t working for us.”</em></p>
+
+<p>Another reason is that he was told to shut down all the APIs but <a href="https://youtu.be/RgsBilpTeiU?t=2075">he refused to</a>:</p>
+
+<p><em>“… the government doesn’t get funded all the api’s get shut off when you leave federal agency this is actually the reason I left government in 2013 is during the government shutdown I was told to shut down all my api’s and I refused to so I quit …“</em></p>
+
+<p>Looks like there is more than one reason why he left the program. Here are more:</p>
+
+<p>After he left the program, he blogged on 2013-11-15 <a href="https://web.archive.org/web/20210515231040/https://kinlane.com/2013/11/15/being-the-change-i-want-to-see-in-the-presidential-innovation-fellowship-pif-program/">how the PIF could be improved and how he felt like working in the government</a>:</p>
+
+<p><em>“In my case, being a government employee was not beneficial. I don’t aspire to establish a career in government, as I hope will be case with some future PIFs, and the role didn’t really open up enough access, to make it worth my while.”</em></p>
+
+<p>Even though Kin only stayed a short period of time with the White House, he later presented lessons learnt from the implementation of API strategy in the United States of America under Obama’s administration in the <a href="https://www.youtube.com/watch?v=RgsBilpTeiU">JRC APIs4DGov Workshop</a>.</p>
+
+<p>One interesting thing that Kin later revealed in a <a href="https://web.archive.org/web/20210513194003/http://kinlane.com/2018/04/25/moving-forward-in-a-world-that-does-not-want-to-forgive/">(deleted) blog post (Apr 2018)</a> is that he failed the background check:</p>
+
+<p><em>“I just received notification I was denied a role on a project for a federal agency because I couldn’t produce enough documentation regarding my troubled past – specifically criminal charges (not convictions) involving my drug use 20 years ago, and my divorce / bankruptcy a decade ago.”</em></p>
+
+<p>I’m all for giving people who made mistakes a second chance. I think this is how our society works. But here comes the question: If he cleared the background check when joining PIF back in 2013, why did the federal agency have to perform another background check on him in 2018?</p>
+
+<p>According to <a href="https://presidentialinnovationfellows.gov/faq/">PIF FAQs</a>:</p>
+
+<p><em>“All government positions require some level of background check. Most roles at PIF require a public trust position clearance, which is more thorough than most private-sector background checks but not as intensive as a higher government security clearance. The clearance process adds some time and forms to the hiring process, but the GSA Human Resources team will guide you through it. GSA is the federal agency under which PIF operates.”</em></p>
+
+<p><em>“The pre-employment process can take weeks or months depending on the depth of the background check, and your speed of responsiveness to the different steps (i.e. fingerprinting, completing security forms, etc.).”</em></p>
+
+<p>Coincidentally the background process may take weeks or months (or 60 days) to complete. Is there by any chance Kin didn’t pass the background process when joining PIF?</p>
+
+<p>Here is another interesting finding. Right before he left the PIF program in Oct 2013, he created another GitHub account <a href="https://web.archive.org/web/20220618021019/https://github.com/timlanedev">“timlandev”</a> on Sep 22, 2013 with the name “Tim Lane”.</p>
+
+<p>Oh wait, is “Kin Lane” not his birth name? No idea but I’m pretty sure he owns this account as he used “timlanedev” to create a GitHub repository <a href="https://web.archive.org/web/20220827074341/https://github.com/timlanedev/api-offices">https://github.com/timlanedev/api-offices</a>. As show in the commit history (a chronological list of changes), there are changes made directly by “kinlane” (Kin Lane’s primary account in GitHub) as shown in the detailed commit logs below and the email address of the author “info@kinlane.com” in the commit log proves my point:</p>
+
+<p><img src="/assets/images/gitlog.png" alt="git log" /></p>
+
+<p>If you were “Kin Lane”, what would be your motivation to create another GitHub account with the name “Tim Lane” right before you left the PIF program? Did the background check uncover his birth name as “Tim Lane” (or “Timothy Lane”) instead as well as his troubled past?</p>
+
+<p>Regardless of Kin’s journey as a PIF with the White House, I still recommend applying this program if you want to work with the top innovators and make a positive impact to the society.</p>
+
+<h2 id="technical-skills">Technical skills</h2>
+
+<p>Is Kin technical? Looks like he is according to <a href="https://twitter.com/kinlane/status/1499798576964128772">his Tweet</a></p>
+
+<p><em>“It never surprises me when folks dismiss what I do as less than their engineering work, because I just tell stories. You just let me know how successful your engineering work is without telling any stories. Not even considering that I can build anything I tell stories about.”</em></p>
+
+<p>Kin has worked professionally as a database engineer for 30 years and used to building his own relational databases, writing his own indexes, relationships and other things:</p>
+
+<p><em>“<a href="https://apievangelist.com/2017/04/24/separating-the-licensing-layers-of-your-valuable-data-using-apis/">I have worked professionally as a database engineer for 30 years this year, with my first job building COBOL databases for use in schools across the State of Oregon in 1987.</a>“</em></p>
+
+<p><em>“<a href="https://web.archive.org/web/20160508150329/https://kinlane.com/2016/04/23/the-potential-of-jekyll-as-a-static-data-engine">I got my first job working on databases in COBOl in 1987. I have worked with almost every database platform out there, and I love data. I remember writing my own indexes, relationships, and other things we take for granted now.</a>“</em></p>
+
+<p><em>“<a href="https://utility-stack.apievangelist.com/about.html">I remember building my own relational databases, and generating stacks of floppy disks to distribute software to clients</a>“</em></p>
+
+<p>In his blog post <a href="https://web.archive.org/web/20131111083010/http://kinlane.wordpress.com/2013/07/22/the-next-decade-is-going-to-be-a-wild-ride/">“The Next Decade is Going to Be A Wild Ride”</a>, he mentioned:</p>
+
+<p><em>“I had just had a very meaningful experiences in scaling architecture for SAP and Google, powered by application programming interfaces (API) and the cloud.”</em></p>
+
+<p>That sounds very technical as he’s scaling architecture for both SAP and Google.</p>
+
+<p>Kin is also <a href="https://web.archive.org/web/20160801041440/http://apievangelist.com/2015/04/29/the-technology-business-and-politics-of-apis-via-a-community-driven-api-life-cycle/">fluent in PHP</a></p>
+
+<p><em>“PHP may not be the choice of API champions, but I was fluent in it, and I new that when the time came, and I open sourced the back-end for API Evangelist, that if everything was straight up LAMP stack, I would reach the widest possible audience.”</em></p>
+
+<p>Kin publishes many of his works to GitHub. We are in luck that we can learn from someone who is fluent in PHP.</p>
+
+<p>There are a few ways to search for PHP code that he wrote in GitHub:</p>
+
+<p><a href="https://github.com/search?q=user%3Akinlane+language%3Aphp&amp;type=code">user:kinlane language:php</a> will show all PHP code in all repositories under his account.
+<a href="https://github.com/search?q=author%3Akinlane+language%3Aphp&amp;type=commits">author:kinlane language:php</a> will show PHP changes (commits) in all repositories in GitHub (e.g. <a href="https://github.com/mimeoconnect/Mimeo-Cloud-Print/commit/4dcbff8d33496c229c97c0c8f58735ae98086226">https://github.com/mimeoconnect/Mimeo-Cloud-Print/commit/4dcbff8d33496c229c97c0c8f58735ae98086226</a> - Kin worked as an API evangelist at Mimeo before according to the <a href="https://www.businesswire.com/news/home/20191120005165/en/Postman-Follows-Successful-Series-B-With-Two-Key-Hires">Postman press release</a> so the commit makes sense.)</p>
+
+<p>One can also search for code snippets that he shares in his <a href="https://gist.github.com/kinlane">GitHub Gist</a>: <a href="https://gist.github.com/search?q=user%3Akinlane+language%3Aphp">user:kinlane language:php</a> will show all the PHP code snippets under his account.</p>
+
+<p>One way to evaluate the code is code analyzers. There are many out there and in this article we use <a href="https://sonarcloud.io">SonarCloud</a> and <a href="https://codeclimate.com">CodeClimate</a> and here are the results:</p>
+
+<p><img src="/assets/images/sonarcloud.png" alt="SonarCloud results" /></p>
+
+<p><img src="/assets/images/codeclimate.png" alt="CodeClimate results" /></p>
+
+<p>The results range from A to E. These are for your reference only and please do not use it as evidence to falsify Kin’s statement that he’s fluent in PHP.</p>
+
+<p>Another way is of course to review these repositories manually and here is what I found:</p>
+<ul>
+  <li>Sadly, none of the repositories I reviewed includes any tests. It’s better to add tests and ensure these tests are run as part of the CI/CD pipeline.</li>
+  <li>Almost all the PHP codes I reviewed are not properly format. Use an <a href="https://www.codecademy.com/article/what-is-an-ide">IDE</a> or <a href="https://github.com/overtrue/phplint">PHP linter</a>.</li>
+  <li>Many <a href="https://github.com/kinlane/apis.how/blob/master/api/index.php#L31">debugging code (commented)</a> is left in the code base. Removing these will make the code cleaner and more readable.</li>
+  <li>Use <a href="https://getcomposer.org/">Composer</a> to manage dependencies since I <a href="https://github.com/search?q=user%3Akinlane+filename%3Acomposer.json">couldn’t find any composer.json</a> under his GitHub repositories.</li>
+</ul>
+
+<p>What about learning from his PHP code by reviewing his <a href="https://github.com/search?q=user%3Akinlane+language%3Aphp">PHP GitHub repositories</a> yourself?</p>
+
+<p>As someone who’s so technical, how does he debug? Let’s find out.</p>
+
+<p>From his <a href="https://github.com/kinlane/github-micro-tool/commits/gh-pages">“github-micro-tool” repository</a>, you can see a lot of commits for debugging. Here are a few examples:</p>
+
+<ul>
+  <li><a href="https://github.com/kinlane/github-micro-tool/commit/ecce8a76e723b92bb2f3892b8f7e23460520a149">https://github.com/kinlane/github-micro-tool/commit/ecce8a76e723b92bb2f3892b8f7e23460520a149</a></li>
+  <li><a href="https://github.com/kinlane/github-micro-tool/commit/689a52e3aa32eded8848e71070ed2d644469a69a">https://github.com/kinlane/github-micro-tool/commit/689a52e3aa32eded8848e71070ed2d644469a69a</a></li>
+  <li><a href="https://github.com/kinlane/github-micro-tool/commit/f44e3c6dc25e2b20104ecffaa14b017217c813f5">https://github.com/kinlane/github-micro-tool/commit/f44e3c6dc25e2b20104ecffaa14b017217c813f5</a></li>
+  <li><a href="[https://github.com/kinlane/github-micro-tool/commit/b006333cf3e3b29d547669c4298aede0c50d380d">https://github.com/kinlane/github-micro-tool/commit/b006333cf3e3b29d547669c4298aede0c50d380d</a></li>
+  <li><a href="https://github.com/kinlane/github-micro-tool/commit/b006333cf3e3b29d547669c4298aede0c50d380d">https://github.com/kinlane/github-micro-tool/commit/b006333cf3e3b29d547669c4298aede0c50d380d</a></li>
+</ul>
+
+<p>His debugging technique is very interesting. First of all, he pushed the change for debugging to GitHub so as to troubleshoot the issue using GitHub pages, but all these can be done locally as explained in <a href="https://docs.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll">“Testing your GitHub Pages site locally with Jekyll”</a>. In other words, the issue/bug can be fixed in one single commit/change if correctly tested in a local environment with Jekyll. Including all these commits for debugging does not make the change history pretty so one should avoid doing so (or should at least try to squash these commits into a single one when merging a pull request) but I’m not here to judge whether this debugging methodology is effective or not.</p>
+
+<p>You can find all other commits on how he debugged in his GitHub repositories with a simple search for <a href="https://github.com/search?q=author%3Akinlane+debug">“author:kinlane debug” on GitHub</a> and lots of commits shown up. Hope you learn something from how he debugs.</p>
+
+<h2 id="api-security">API Security</h2>
+
+<p>Kin Lane has written and presented a lot about API security.</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=i7YUymQkZ_8">talked about APIs and Securitywith students fromthe Tecnológico de Monterrey Guadalajara Campusin theTC2027 Computer and Information Security class</a></li>
+  <li><a href="https://www.youtube.com/watch?v=3AJqz-Q6y9M">talked about top API Security and Compliance issues that enterprise leaders must address.</a></li>
+  <li><a href="https://soundcloud.com/buzzword-bingo/api-security-the-fundamentals">deeped dive into API authentication, testing/validation best practices, and machine learning use cases.</a></li>
+  <li><a href="https://futurecio.tech/wp-content/uploads/2020/04/TIBCO_2019_Q4_Ping_The-Evolving-API-Security-Landscape.pdf">a whitepaper on “The Evolving APISecurity Landscape”</a></li>
+  <li><a href="https://42crunch.com/how-to-test-api-security-throughout-the-api-lifecycle-with-postman-and-42crunch/">a webinar on “How to test API security throughout the API lifecycle with Postman and 42Crunch”</a></li>
+</ul>
+
+<p>He also published <a href="https://kinlane.gumroad.com/l/UOBZd">“The API Evangelist API Security Industry Guide”</a> (52 pages for $20USD)</p>
+
+<p>Looks like he’s very knowledge in API security. <a href="https://web.archive.org/web/20190101054844/https://security.apievangelist.com/">Security</a> and <a href="https://web.archive.org/web/20210207002738/http://cybersecurity.apievangelist.com/">CyberSecurity</a> are also part of his API Life Cycle research area. You can dive into his research to learn more and understand the differences between the two.</p>
+
+<p>Unfortunately, Kin accounts were hacked several times before.</p>
+
+<p>His AWS account was compromised in Sep 2020 according to his Tweet (deleted).</p>
+
+<p><em>“<a href="https://archive.ph/n3w8s">Woke up early to do a dry-run for a talk later this week in India. Opened inbox and had email from AWS saying my account has been compromised, and the current EC2 running will be 17K per day. Managed to operate for 14 years without compromise…WTF.</a>“</em></p>
+
+<p>His Instagram account was also compromised before the 2016 United States presidential election.</p>
+
+<p><em>“<a href="https://web.archive.org/web/20190413184045/http://kinlane.com/2017/08/21/an-escalation-in-the-deplatforming-of-hate/">then sometime in 2016 my account got hacked by Russians (really), and the timeline filled up with spam and propaganda and the account followed like 10K other Russian accounts</a>“</em></p>
+
+<p>According to Kin, his website has been <a href="https://web.archive.org/web/20170212111932/http://kinlane.com/2016/09/06/keeping-things-static-with-my-public-presence-to-reduce-security-friction/">hacked a few times</a>, which is unfortunate. That’s why he decided to outsource his security to GitHub and CloudFare.</p>
+
+<p><em>“I like managing my sites this way, but the primary reason I migrated to this setup was because of security. After a couple of online events where I stepped up to defend my girlfriend Audrey Watters (@audreywatters) I woke up to all of my sites being down, by some friendly hacker.”</em></p>
+
+<p><em>“I admit I don’t have the best security practices. I have the skills to do it, but everything I do is public, so security is really not a concern”</em></p>
+
+<p><em>“<a href="https://web.archive.org/web/20210513061835/http://kinlane.com/2016/09/06/keeping-things-static-with-my-public-presence-to-reduce-security-friction/">When this is coupled with CloudFlare for my DNS, and offloading my DNS security to their experts, I figure I’m coming out ahead when it comes to securing my public presence, and what is most important to me–my research.</a>“</em></p>
+
+<p>Don’t get me wrong. I’m not implying those who use Clouldflare, GitHub are not security experts. It’s also perfectly fine to honestly acknowledge one does not have the best security practices.</p>
+
+<p>Sometimes these real life experiences of being hacked are what makes someone an API security expert.</p>
+
+<p>In his blog post <a href="http://apievangelist.com/2018/09/13/please-refer-the-engineer-from-your-api-team-to-this-story/">“Please Refer The Engineer From Your API Team To This Story” (Sep 2018)</a>, he acknowledges setting up SSL certificate is hard in the <a href="https://disqus.com/home/discussion/apievangelist/please_refer_the_engineer_from_your_api_team_to_this_story/">comment section</a> of his blog post <a href="https://web.archive.org/web/20211027004638/https://apievangelist.com/2018/09/13/please-refer-the-engineer-from-your-api-team-to-this-story/">“Please Refer The Engineer From Your API Team To This Story”</a>:</p>
+
+<p><em>“Boy you got me. I’m gonna pack it in now man. Why the fxxk would you feel compelled to leave a comment like that? Ain’t you got anything better to do with your life? Get the fxxk off my domain - https://apievangelist.com/ <strong>Yeah, certs are really fxxking hard to do</strong>. I wonder what I’m installing on CloudFlare, and all my servers on a regular basis? Or maybe you are asking why I don’t enforce encryption? That would be a different conversation and since you didn’t ask, I ain’t going into it.”</em></p>
+
+<p>I would simply assume security experts at least know how to set up SSL certifcates properly, but my assumption could be wrong.</p>
+
+<p>As mentioned previously, I’m able to find some PHP code written by Kin published to GitHub. Here is one <a href="https://github.com/mimeoconnect/Mimeo-Cloud-Print/blob/master/backup/edit-book.php#L33">example</a> but this may subject to <a href="https://owasp.org/www-community/attacks/SQL_Injection">SQL injection</a>. Here is another <a href="https://github.com/kinlane/apis.how/blob/master/app/index.php#L19">example</a> in his “apis.how” project, which is his own URL shortener. Please also avoid hardcoding passwords in the config files (I’m not going to provide an example for this one). These codes were written several years and I’m sure Kin now writes more secure PHP code for production usage.</p>
+
+<p>Kin built many websites using GitHub pages, but most I inspected are still using outdated software libraries.</p>
+
+<p>I reviewed some of the websites he published in his GitHub repositories and surprisingly, most dependencies seem to be outdated. Here is one: <a href="https://github.com/kinlane/blueprints/blob/main/Gemfile.lock#L31">https://github.com/kinlane/blueprints/blob/main/Gemfile.lock#L31</a></p>
+
+<p><a href="https://rubygems.org/gems/github-pages">github-pages</a> version 180 was released on March 26, 2018 and the latest version 227 was published in Jul 2022. Is he unconcerned about using outdated software packages/libraries with security issues? Uploading Gemfilie.lock to <a href="https://audit.fastruby.io">audit.fastruby.io</a> shows <a href="https://audit.fastruby.io/gemfiles/F637BAEC">26 issues</a> such as remote code execution in Kramdown.</p>
+
+<p>In his blog https://apievangelist.com, it’s still using jquery <a href="https://web.archive.org/web/20220901015315js_/https://apievangelist.com/js/jquery-latest.min.js">v1.11.1</a>, which was released in <a href="https://blog.jquery.com/2014/05/01/jquery-1-11-1-and-2-1-1-released">May 2014</a> and you find the usage of jquery v1.11.1 on his website since <a href="https://web.archive.org/web/20140905192011/http://apievangelist.com/">Sep 2014</a>. There are <a href="https://snyk.io/test/npm/jquery/1.11.1">known security vulnerabilities</a> with this version. Users are recommended to update jquery v1.11.1 to newer version such as v3.5.0 to mitigate security risks.</p>
+
+<p>In his personal blog https://kinlane.com (that he wiped out and rebuilt in May 2021), it’s still using <a href="https://web.archive.org/web/20220822042934js_/https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js">bootstrap.min.jsv4.0.0</a>, which was released in <a href="https://auth0.com/blog/whats-new-in-bootstrap4/">Jan 2018</a>. Not to your surprise, it also contains some <a href="https://security.snyk.io/package/npm/bootstrap/4.0.0">security vulnerabilities</a>.</p>
+
+<p>I’m not denying Kin is a security expert but still I strongly recommend him or anyone reading this to keep the software stack up-to-date to avoid any security issues due to outdated libraries.</p>
+
+<p>Kin also invents innovative approaches to address his very unique IT security needs. <a href="https://web.archive.org/web/20211023145452/https://apievangelist.com/2015/01/14/storing-api-keys-in-the-private-master-github-repository-for-use-in-github-pages/">He stored his private keys in a private GitHub repository</a> and use it a single source of truth in the authentication layer of his applications (<a href="https://web.archive.org/web/20220802043834/http://api-keys.apievangelist.com/">http://api-keys.apievangelist.com/</a>). Sounds like a brilliant idea? The short answer is NO. Please do NOT follow his practice as David Calaverahas pointed out: <em>“<a href="https://twitter.com/calavera/status/658024821117194240">github doesn’t encrypt not segregate your private repos, which means all these keys, tokens, etc. are stored in plain text, which is totally a bad idea</a>“</em>.</p>
+
+<h2 id="standards">Standards</h2>
+
+<h4 id="swagger">Swagger</h4>
+
+<p>Kin makes a lot of contributions to API standards and I truly appreciate people working on standards to make the API industry better. Let’s learn from his works on various standards.</p>
+
+<p><a href="https://swagger.io/docs/specification/about/">Swagger</a> is a set of open-source tools built around the OpenAPI Specification (formerly Swagger Specification) that can help you design, build, document and consume REST APIs. The major Swagger tools include Swagger Editor, Swagger Codegen, SwaggerHub and Swagger UI. Kin played a significant role in popularizing Swagger according to his blog post <a href="https://apievangelist.com/2015/10/22/how-to-build-an-api-brand-through-consistent-storytelling/">“How to build an API brand through consistent storytelling”</a>:</p>
+
+<p><em>“Along with the value brought to the table by Tony, and the community, <strong>I do feel I played a significant role in where the Swagger brand is today</strong>. I did this through building tooling with Swagger, searching out what others were doing, and telling the story all along the way. I wrote 160 stories in 2015 alone, and I did this all via my own blog.”</em></p>
+
+<p>He also built up and popularize Swagger, as well as the transition from Swagger to OpenAPI in his blog post <a href="https://apievangelist.com/2022/06/25/swagger-reflects-the-short-signtedness-of-many-api-industry-service-providers/">“Swagger reflects the short signtedness of many API industry service providers”</a>:</p>
+
+<p><em>“Seven years later, Swagger still dominates search engines and many folks still think it is the specification, and do not understand the difference between Swagger and OpenAPI. <strong>I was involved in the whole journey, helping build up and popularize Swagger, as well as the transition from Swagger to OpenAPI</strong>, and now I am writing this story as my team continues to think critically about how we can help clean up this mess.”</em></p>
+
+<p>Luckily, Swagger is open-source and hosted on GitHub. We can find out all the awesome contributions (code changes, documentations, etc.) made by Kin and learned from his contributions.</p>
+
+<p>When I did a search for “author:kinlane” under <a href="https://github.com/swagger-api/">“swagger-api”</a> organization account, I got the following (a free <a href="https://github.com/signup">GitHub account</a> is required to perform the code search):</p>
+
+<p><a href="https://github.com/search?q=org%3Aswagger-api+author%3Akinlane"><img src="/assets/images/swagger_search_1.png" alt="kinlane search" /></a></p>
+
+<p>Basically, he didn’t make any change to projects hosted under “swagger-api” such as <a href="https://github.com/swagger-api/swagger-ui">swagger-api/swagger-ui</a>. He only opened one single issue in Mar 2015 about <a href="https://github.com/swagger-api/swagger-ui/issues/1021">“Swagger UI 508 compliance”</a>:</p>
+
+<p>To confirm the search expression works as expected, I searched for changes made by the creator of Swagger: Tony Tam. The search for “author:fehguy” under the “swagger-api” organization account confirmed the search query works:</p>
+
+<p><a href="https://github.com/search?q=org%3Aswagger-api+author%3Afehguy"><img src="/assets/images/fehguy_search.png" alt="fehguy search" /></a></p>
+
+<p>Maybe he used another GitHub account to make the contributions? I tried with <a href="https://github.com/apievangelist">“apievangelist”</a>, <a href="https://github.com/timlandev">“timlandev”</a> but still no luck. I though someone who played a significant role in Swagger’s success, at least makes some changes in the Swagger projects but my assumption could be wrong.</p>
+
+<p>Kin heavily uses OpenAPI/Swagger in his projects as one can easily find the API specification files (e.g. swagger.json) in his projects. His <a href="https://github.com/Kin-Lane/screen-capture">screen capture API</a> is one example and you can find <a href="https://github.com/Kin-Lane/screen-capture/blob/gh-pages/swagger.json">swagger.json</a> in the root level of the project to describe the API. Even though I am no expert in OpenAPI/Swagger, swagger.json looks pretty easy to understand to me. One suggestion is to use <a href="https://swagger.io/specification/v2/"><code class="language-plaintext highlighter-rouge">security</code></a> to document <code class="language-plaintext highlighter-rouge">appkey</code> and <code class="language-plaintext highlighter-rouge">appid</code>, like what he did in another specification file in the <a href="https://github.com/kinlane/template-bootstrap/blob/master/_data/v1.1/openapi.yaml#L60-L62">“template-bootstrap”</a> project, instead of documenting these as query parameters. One should also validate the specification files in the <a href="https://www.redhat.com/en/topics/devops/what-cicd-pipeline">CI/CD pipeline</a> to ensure these files are still valid after changes. Providing the following specification files to online validators (<a href="https://editors.swagger.io">https://editors.swagger.io</a>, <a href="https://apitools.dev/swagger-parser/online">https://apitools.dev/swagger-parser/online</a>) shows a few errors:</p>
+
+<ul>
+  <li><a href="https://raw.githubusercontent.com/kinlane/template-bootstrap/master/_data/v1.1/openapi.yaml">https://raw.githubusercontent.com/kinlane/template-bootstrap/master/_data/v1.1/openapi.yaml</a></li>
+  <li><a href="https://raw.githubusercontent.com/Kin-Lane/screen-capture/gh-pages/swagger.json">https://raw.githubusercontent.com/Kin-Lane/screen-capture/gh-pages/swagger.json</a></li>
+</ul>
+
+<p><img src="/assets/images/invalid_1.png" alt="swagger editor errors" />
+<img src="/assets/images/invalid_2.png" alt="swgger cli errors" /></p>
+
+<h4 id="openapi">OpenAPI</h4>
+
+<p><a href="https://dev.to/mikeralphson/a-brief-history-of-the-openapi-specification-3g27">OpenAPI Specification</a> is an API description format for REST APIs. Here is the <a href="https://en.wikipedia.org/wiki/OpenAPI_Specification">definition from Wikipedia</a>:</p>
+
+<p><em>“The OpenAPI Specification, previously known as the Swagger Specification, is a specification for machine-readable interface files for describing, producing, consuming, and visualizing RESTful web services.[1] Previously part of the Swagger framework, it became a separate project in 2016, overseen by the OpenAPI Initiative, an open-source collaboration project of the Linux Foundation.”</em></p>
+
+<p>However, Kin didn’t join the OpenAPI Initiative (OAI) as a founding member in Nov 2015 because <a href="https://web.archive.org/web/20210922111116/https://apievangelist.com/2017/02/09/api-evangelist-joins-the-open-api-initiative-oai/">he felt it wasn’t the right time</a>. Even he didn’t join right after OAI was formed, he still provided valuable feedback to point out 2 areas in which OpenAPI spec (aka Swagger) needed improvements in his blog post <a href="https://web.archive.org/web/20210707063336/https://apievangelist.com/2016/01/04/api-blueprint-has-been-evolving-in-two-critical-areas-where-openapi-spec-aka-swagger-falls-significantly-short/">“API Blueprint Has Been Evolving In Two Critical Areas Where OpenAPI Spec (aka Swagger) Falls Significantly Short”</a>:</p>
+
+<p><em>“Media types, and body are two areas that OpenAPI Spec (aka Swagger) is deficient. Something that gives Apiary a pretty interesting head start when it comes to two pretty fundamental building blocks of the web, and therefore APIs. I was going to start using vendor extensions, to begin playing around with content-type negotiation in my OpenAPI Spec files, but I might just invest my energy into sharpening my API Blueprint skills, and definition repository instead.”</em></p>
+
+<p>He later <a href="https://web.archive.org/web/20170620134101/https://www.openapis.org/membership/members">joined OpenAPI Initiative</a> in Feb 2017 as he felt like <a href="https://web.archive.org/web/20210922111116/https://apievangelist.com/2017/02/09/api-evangelist-joins-the-open-api-initiative-oai/">we need as many voices at the table as we possibly can</a>.</p>
+
+<p>I found it weird that someone who was involved in the transition from Swagger to OpenAPI didn’t joined OpenAPI Initiative in its early days and only changed his mind 13 months later. Does anyone know the details of his involvement in the transition from Swagger to OpenAPI? Please leave a comment below and I would love to learn more.</p>
+
+<p>But later he <a href="https://web.archive.org/web/20190528195307/https://www.openapis.org/membership/members">exited his member status in 2019</a>. Even though he’s no longer a member, <a href="https://web.archive.org/web/20210124045411/https://apievangelist.com/2021/01/23/evaluating-apis-json-api-property-types-alongside-openapi-extensions/">a project built by Kin still joined OpenAPI Initiative in 2021</a>:</p>
+
+<p><em>“In 2020 I find myself totally immersed in the API landscape as part of my API Specification Toolbox project which grew out of Postman becoming a member of the OpenAPI Initiative, and I wanted toht spend why Saturday afternoon (I know I have a problem) thinking about the API landscape at the 250K.”</em></p>
+
+<h4 id="apisjson">apis.json</h4>
+
+<p>Kin Lane is the co-author of the standard <a href="http://apisjson.org/format/apisjson_0.11.txt">“apis.json”</a>, which can be described as follows:</p>
+
+<p><a href="http://apisjson.org/">APIs.json is a machine readable specification that API providers can use to describe their API operations, similar to how web sites are described using sitemap.xml. Providing an index of internal, partner, and public APIs, which includes not just the the OpenAPI, JSON Schema, and other machine readable artifacts, but also the currently only human readable elements like documentation, pricing, and terms of service.</a></p>
+
+<p>By the way, http://apisjson.org does not automatically redirect to https://apisjson.org with secure connection and even https://apisjson.org shows some warnings related to the SSL certificates in Firefox: <em>Error code: SSL_ERROR_BAD_CERT_DOMAIN</em>. Looks like the certificate of the site has not been correctly set up.</p>
+
+<p><img src="/assets/images/invalid_cert.png" alt="SSL_ERROR_BAD_CERT_DOMAIN" /></p>
+
+<p>The latest version v0.15 was published back in Apr 2015. They proposed a new version v0.16 in Sep 2020. All these versions are still “Draft for Comment”. On Sep 06, 2020, the blog post <a href="http://apisjson.org/2020/09/06/the-future-of-apis-json/">“The Future of APIs.json (2020 Edition)”</a> mentions the roadmap for v1.0 of apis.json:</p>
+
+<p><em>“Refreshing the website, updating the blog and Twitter account were the first business items on the list. Next we want to continue the conversation around the next version of the specification, getting us closer to an official 1.0 version that the community has helped define.”</em></p>
+
+<p>In the <a href="https://github.com/apis-json/api-json">GitHub page</a>, it lists out 31 users (companies, organizations, projects, etc.) with direct links to their apis.json but unfortunately 16 are broken links. For those that are still accessible, most are using v0.14 (released on Jun 2014) and only 1 has updated to the latest version v0.15. In the list, two are actually maintained by Kin lane himself.</p>
+
+<ul>
+  <li><a href="http://developer.apievangelist.com/apis.json">API Evangelist</a>, which was “created”:”2017-06-24” and “modified”:”2017-06-30”</li>
+  <li><a href="http://developer.kinlane.com/apis.json">Kin Lane</a>, which was “created”: “2016-02-14” and “modified”: “2015-01-22” (yes, you read it correctly. Likely these dates are swapped by mistakes)</li>
+</ul>
+
+<p>Both are still using v0.14 so looks like the migration to v0.15 is not that easy and it’s also hard to keep api.jsons up-to-date since the last update was already 5 years ago.</p>
+
+<p>You may think naming a standard with data format such as JSON is a rookie mistake. Nope, have a look at the bottom of the https://apisjson.org homepage and you will notice the following:</p>
+
+<p><em>“do you prefer yaml? <a href="http://apisyaml.org/">apis.yaml</a>“</em></p>
+
+<p>He got it covered as well. There’s a equivalent of the standard but in YAML format called “apis.yaml”.</p>
+
+<p>But it can still be popular, right? I did a search in <a href="https://stackoverflow.com/search?q=%22apis.json%22">StackOverlfow</a>, a very popular developer platform and no one has mentioned “apis.json” at all (no luck with “apis.yaml” either). What about discussion board like Hacker News, there only <a href="https://hn.algolia.com/?dateRange=all&amp;page=0&amp;prefix=true&amp;query=%22apis.json%22&amp;sort=byPopularity&amp;type=story">3 mentions with one comment</a>.</p>
+
+<p>According to Kin, he was seeing <a href="https://web.archive.org/web/20210920060256/https://apievangelist.com/2015/01/31/breaking-down-the-fitbit-apis-json-file/">more native adoption of APIs.json in leading API management providers</a>.</p>
+
+<p><em>“I am seeing more API providers begin to deploy APIs.json for their providers, and I have two of the leading API management providers about to release APIs.json as a native part of their API management workflow, with others in the works. It is good to see APIs like Fitbit see the potential of indexing their API operations with APIs.json, something where the benefits are only going to grow over the coming years, as new tools, and services emerge that depend on APIs.json for engaging in the API economy.”</em></p>
+
+<p>But I just couldn’t find which API management provider(s) have adopted it. Does anyone know? Please leave a comment below.</p>
+
+<p>He also hopes that <a href="https://web.archive.org/web/20170618165714/https://apievangelist.com/2017/03/15/azure-and-office-apis-in-visual-studio/">Microsoft Visual Studio would adopt apis.json in deliverling APIs via IDE</a>:</p>
+
+<p><em>“I have talked about <a href="https://web.archive.org/web/20170618165714/http://apievangelist.com/2015/06/27/apisjson-driven-api-dictionaries-for-use-in-atom-ide-autocomplete-packages/">delivering APIs in Atom using APIs.json</a>, and have <a href="https://web.archive.org/web/20170618165714/https://apievangelist.com/2014/08/19/bing-developer-assistant-for-visual-studio-delivers-relevant-api-code/">long hoped Microsoft would move forward with this in Visual Studio</a>. All APIs should be discoverable from within any IDE, it just makes sense as a frontline for API discovery, especially when we are talking about developers.”</em></p>
+
+<p>He later made a point that seamlessly integrating Microsoft APIs into Visual Studio is a no brainer.</p>
+
+<p><em>“<a href="https://web.archive.org/web/20170618165714/https://apievangelist.com/2017/03/15/azure-and-office-apis-in-visual-studio/">If Microsoft was smart, all their APIs would be seamlessly integrated into Visual Studio, as well as allow developers to easily import any other API using OpenAPI, or Postman Collections.</a>“</em></p>
+
+<p>And looks like his efforts started paying off in 2020 as mentioned in a <a href="https://twitter.com/APIsjson/status/1306316030055129089">tweet</a>:</p>
+
+<p><em>“Spending time today talking with @njyx and @picsoung about the future of @APIsjson - Lots of movement on tooling side, and new conversation about how to use in a diverse API toolbox world, renewing investment for a next version -http://apisjson.org”</em></p>
+
+<p>As demonstrated in Kin’s article showing how his storytelling plays significant role in popularizing Swagger, one can use Google Trend to measure the growth of a product/standard. Using Google Trend and comparing apis.json with other standards such as JSON Schema and OpenAPI sadly illustrate apis.json did not gaining traction at all in the past 5 years, despite being mentioned 60+ times in his blog posts.</p>
+
+<p><a href="https://trends.google.com/trends/explore?date=today%205-y&amp;q=%22apis.json%22,json%20schema,openapi"><img src="/assets/images/apisjson_trend.png" alt="Google Trends on apis.json, JSON schema, OpenAPI" /></a></p>
+
+<p>So why apis.json doesn’t seem to gain any traction?</p>
+
+<p>We all know working on a standard is not something easier, not to mention to making it popular despite Kin has firsthand experience popularizing “Swagger” himself. Looks like a lot work ahead and we can foresee Kin’s storytelling (not marketing) will play a significant role in popularizing apis.json. Looking forward to the v1.0 release so that the API community can benefit more from Kin’s awesome work.</p>
+
+<h2 id="key-opinion-leader-kol--influencer">Key Opinion Leader (KOL) / influencer</h2>
+
+<p>Not to your surprise, Kin is also a Key Opinion Leader (KOL) or influencer recognized by many.</p>
+
+<p>https://opentravel.org/advisors/kin-lane/</p>
+
+<ul>
+  <li><a href="https://www.storyly.io/post/top-50-developer-influencers-to-follow-on-twitter">Top 50 Developer Influencers to Follow on Twitter</a> Aug 31, 2022</li>
+  <li><a href="https://apiumhub.com/tech-blog-barcelona/great-mobile-development-influencers/#KIN_LANE">10 Great mobile development influencers</a> (from what I know, Kin has never built a mobile app) Sep 2016</li>
+  <li><a href="https://medium.com/@latamdigitalmarketing/digital-marketing-influencers-that-you-must-follow-82e9b20c5068">Digital marketing influencers that you must follow</a> Aug 14, 2019</li>
+  <li><a href="https://onalytica.com/blog/posts/the-internet-of-things-top-100-thought-leaders/">The Internet of Things 2014 – Top 100 Thought Leaders</a> Apr 15, 2014</li>
+  <li><a href="https://www.ecairn.com/blogs/blog-post-title-three-359w4-m4er9-j3rk2-r3656">The Top 100 Influencers in #DevRel</a> Mar 2022</li>
+</ul>
+
+<p>Let’s walk through his presence in popular social networks:</p>
+
+<h4 id="hacker-news">Hacker News:</h4>
+
+<p><a href="https://news.ycombinator.com/">Hacker News (HN)</a> is a social news website focusing on computer science and entrepreneurship. It is run by the investment fund and startup incubator Y Combinator. In general, content that can be submitted is defined as “anything that gratifies one’s intellectual curiosity.”</p>
+
+<p>He found the Hacker News audience pretty trollish as mentioned in his blog post <a href="https://web.archive.org/web/20150226115152/http://apievangelist.com/2015/02/24/the-alpha-api-evangelist-workbench/">“The Alpha API Evangelist Workbench”</a>:</p>
+
+<p><em>“I have a lot of ideas coming off the assembly line around my own infrastructure, Docker, microservices, and other more forward leaning areas. Normally I dump a lot of this mundane exhaust from my world over on Kin Lane, but that site gets picked up by DZone, due to historical connections, <strong>and that audience is pretty trollish, second only to Hacker News</strong>. I’m not looking to get into petty fights over choice I made around my own infrastructure.”</em></p>
+
+<p>What’s “trollish” based on Kin’s definition? Here is an <a href="https://dzone.com/articles/sorry-google-your-programming">example</a> (not saying all comments in that article is trollish). You can review and make your own judgment.</p>
+
+<p>Kin did explain <a href="https://web.archive.org/web/20190315184903/http://apievangelist.com/2014/09/14/building-the-type-of-audience-i-really-want/">why the Hacker News community doesn’t like his blog posts</a></p>
+
+<p><em>“I used to work hard to write blog posts on API Evangelist that would have broad appeal with the Hacker News community, and at first I didn’t have any luck, after trying to engage with readers on posts, I found myself blacklisted, where nothing I submitted showed up. I lived in some kind parallel universe, all because I argued with a couple influential HN users, who didn’t like what I had to offer.”</em></p>
+
+<p>Sorry to hear that he was blacklisted in 2014 but some other users (no idea if these user accounts are created by him) still submitted <a href="https://news.ycombinator.com/from?site=apievangelist.com">his blog posts to Hacker News</a>, but unfortunately looks like those submissions gain no traction as most submissions do not have a single comment).</p>
+
+<p>You can find <a href="https://news.ycombinator.com/threads?id=apievangelist">some of his arguments and comments</a> on HackerNews below:</p>
+
+<ul>
+  <li><a href="https://news.ycombinator.com/item?id=8638382">RE: it gets 3scale marketing traffic. it doesn’t offer anything useful or functional just a viola effect.</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=2400828">RE: This entire post is basically making the point that GitHub is awesome. Seriously? Where have you been? Hey, ever hear about JSON? How this made it to HN is beyond me.</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=2595075 - https://news.ycombinator.com/item?id=2351588">RE: Title (on HN) is a bit misleading - maybe intentionally so, I’m not sure. The linked article refers to “Evrything”, a specific service, having an API.</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=3383545">RE: Solution for IMAP Headaches Out of Beta (programmableweb.com)</a></li>
+</ul>
+
+<p>Source: “apievangelist” <a href="https://news.ycombinator.com/submitted?id=apievangelist">submissions</a>, <a href="https://news.ycombinator.com/threads?id=apievangelist">comments</a> on Hacker News.</p>
+
+<h4 id="stackoverflow">StackOverflow</h4>
+
+<p><a href="https://stackoverflow.com/">Stack Overflow</a> is a question-and-answer website for professional and enthusiast programmers. That’s his StackOverflow profile: <a href="https://stackoverflow.com/users/1217549/kinlane">https://stackoverflow.com/users/1217549/kinlane</a>. His best answer (out of 4) got 3 upvotes while the worst one got 1 downvote.</p>
+
+<h4 id="quora">Quora</h4>
+
+<p>What about Quora, which is a social question-and-answer website? He created <a href="https://www.quora.com/profile/Kin-Lane">an account before</a> with ~500 followers but it’s now marked as deactivated. You can still learn from his <a href="https://www.quora.com/profile/Kin-Lane/questions">questions</a> and <a href="https://www.quora.com/profile/Kin-Lane/answers">answers</a>.</p>
+
+<h4 id="twitter">Twitter</h4>
+
+<p>Kin’s Twitter accounts <a href="https://twitter.com/kinlane">@kinlane</a> and <a href="https://twitter.com/apievangelist.com">@apievangelist</a> have 17k and 13.7k followers respectively. He shares lots of wisdom there (<a href="https://twitter.com/kinlane/status/1565023342335184896">example</a>). However, looks like he constantly wipes out his tweets for some unknown reasons. Tweets sent from @kinlane between 2017-07-08 and 2021-11-08,2012-03-01 and 2017-04-17 are gone:</p>
+
+<ul>
+  <li><a href="https://twitter.com/search?q=(from%3Akinlane)%20until%3A2021-11-08%20since%3A2017-07-08&amp;src=typed_query&amp;f=live">(from:kinlane) until:2021-11-08 since:2017-07-08</a></li>
+  <li><a href="https://twitter.com/search?q=(from%3Akinlane)%20until%3A2017-04-17%20since%3A2012-03-01&amp;src=typed_query&amp;f=live">(from:kinlane) until:2017-04-17 since:2012-03-01</a></li>
+</ul>
+
+<p>but you’re not out of luck. You can still search for replies to these deleted Tweets to learn more from these conversations:</p>
+
+<ul>
+  <li><a href="https://twitter.com/search?q=(to%3Akinlane)%20until%3A2021-11-08%20since%3A2017-07-08&amp;src=typed_query&amp;f=live">(to:kinlane) until:2021-11-08 since:2017-07-08</a></li>
+  <li><a href="https://twitter.com/search?q=(to%3Akinlane)%20until%3A2017-04-17%20since%3A2012-03-01&amp;src=typed_query&amp;f=live">(to:kinlane) until:2017-04-17 since:2012-03-01</a></li>
+</ul>
+
+<p>Please make sure you follow his Twitter accounts and learn from his tweets before he deletes those one day.</p>
+
+<h4 id="blogs">Blogs</h4>
+
+<p>He also shares a lot of wisdom in his blogs: <a href="https://apievangelist.com">https://apievangelist.com</a> and <a href="https://kinlane.com">https://kinlane.com</a>. As said before, https://kinlane.com was wiped out so most of the old blog posts are no longer accessible. Fortunately, GitHub saves the day. https://kinlane.com is hosted on GitHub. <a href="https://web.archive.org/web/20201214202042/https://github.com/kinlane/kin-lane/network/members">Several users have forked his repositories</a> therefore some of the deleted blog posts can still be recovered. Here are some <a href="https://web.archive.org/web/20201214202042/https://github.com/kinlane/kin-lane/network/members">forks</a>:</p>
+
+<ul>
+  <li><a href="https://github.com/doanderson/kin-lane">https://github.com/doanderson/kin-lane</a></li>
+  <li><a href="https://github.com/gbinal/kin-lane">https://github.com/gbinal/kin-lane</a></li>
+  <li><a href="https://github.com/kgeis/kin-lane">https://github.com/kgeis/kin-lane</a></li>
+  <li><a href="https://github.com/mkipcak/kin-lane">https://github.com/mkipcak/kin-lane</a></li>
+  <li><a href="https://github.com/mlncn/kin-lane">https://github.com/mlncn/kin-lane</a></li>
+</ul>
+
+<p>To give you an example, the blog post “Sexism in the Tech Space” (source deleted. <a href="https://web.archive.org/web/20210513062034/http://kinlane.com/2012/12/30/sexism-in-the-tech-space/">Internet Archive</a>) has been deleted. Here is a direct link to the source found in the forked repository.</p>
+
+<p><a href="https://github.com/gbinal/kin-lane/blob/gh-pages/_posts/2012-12-30-sexism-in-the-tech-space.html">https://github.com/gbinal/kin-lane/blob/gh-pages/_posts/2012-12-30-sexism-in-the-tech-space.html</a></p>
+
+<p>Please do not prematurely conclude Kin was in prison after reading the above blog post. He only said, <em>“After that I would love to put all you misogynistic fuckers into jail for a while, let you defend yourself. Have you been to jail? I have. I was arrested when I was 18, downtown SF”</em>. <a href="https://www.merriam-webster.com/words-at-play/jail-vs-prison-difference">Jail and prison are not the same things</a>. In April 2021, Kin said in a <a href="https://archive.ph/o7HBU">(deleted) Tweet</a>:</p>
+
+<p><em>“I was arrested in 1996 as part of the Oklahoma City Bombings. However, it was due to mistaken identity. The two brothers I was mistaken for are associates of Timothy McVeigh. I’ve never been to prison. There is really a good story there I am happy to share, and not ashamed of.”</em></p>
+
+<p>This helps clarify Kin has never been to prison.</p>
+
+<p>But sometimes Kin also deleted the source files from his GitHub repositories. Here are some examples that the URLs are no longer accessible, the source files were deleted from his GitHub repository hidden from the public websites but are still available in the Internet Archive:</p>
+
+<ul>
+  <li><a href="https://apievangelist.com/2019/01/22/stepping-back-from-api-evangelist/">https://apievangelist.com/2019/01/22/stepping-back-from-api-evangelist/</a> (<a href="https://github.com/kinlane/api-evangelist/blob/gh-pages/_posts/2019-01-22-stepping-back-from-api-evangelist.html">source</a> deleted, <a href="https://web.archive.org/web/20190123162524/https://apievangelist.com/2019/01/22/stepping-back-from-api-evangelist/">Internet Archive</a>)</li>
+  <li><a href="https://apievangelist.com/2018/09/17/justifying-my-existence-in-your-api-funnel/">https://apievangelist.com/2018/09/17/justifying-my-existence-in-your-api-funnel/</a> (<a href="https://github.com/kinlane/api-evangelist/blob/gh-pages/_posts/2018-09-17-justifying-my-existence-in-your-api-sales-and-marketing-funnel.html">source</a> not deleted but hidden from the public website, <a href="https://web.archive.org/web/20180922131615/https://apievangelist.com/2018/09/17/justifying-my-existence-in-your-api-funnel/">Internet Archive</a>)</li>
+  <li><a href="https://apievangelist.com/2018/01/24/where-am-i-in-the-sales-funnel-for-your-api/">https://apievangelist.com/2018/01/24/where-am-i-in-the-sales-funnel-for-your-api/</a> (<a href="https://github.com/kinlane/api-evangelist/blob/gh-pages/_posts/2018-01-24-where-am-i-in-the-sales-funnel-for-your-api.html">source</a> not deleted but hidden from the public website, <a href="https://web.archive.org/web/20210725140854/https://apievangelist.com/2018/09/17/justifying-my-existence-in-your-api-funnel/">Internet Archive</a>)</li>
+</ul>
+
+<p>One can also find all the archived posts for a particular domain with a simple search:</p>
+<ul>
+  <li>WebArchive for <a href="https://web.archive.org/web/2022%2A/http://apievangelist.com/%2A">apievangelist.com</a></li>
+  <li>WebArchive for <a href="https://web.archive.org/web/*/http://kinlane.com/*">kinlane.com</a></li>
+  <li>archive.today for <a href="https://archive.ph/http://apievangelist.com/*">apievangelist.com</a></li>
+  <li>archive.today for <a href="https://archive.ph/http://kinlane.com/*">kinlane.com</a></li>
+</ul>
+
+<p>You may wonder why Kin writes so openly about his past. Not to your surprise, <a href="https://web.archive.org/web/20180616193109/http://kinlane.com/2018/06/08/i-learned-to-talk-openly-about-my-past-from-you/">his (deleted) blog post</a> has an answer:</p>
+
+<p><em>“I had NEVER talked about my earlier drug use, criminal history, and mental illness before that moment. Anthony Bourdain openly talking about his own struggles on his show taught me that I could still be successful, even if I was open about my past. I’m thankful to him for this.”</em></p>
+
+<p>In the <a href="https://vimeo.com/295217613">“REST Fest 2018” conference in which Kin is a keynote speaker</a>, he also honestly acknowledged some of the “stories” he told as part of his “storytelling” is not 100% real in the keynote of the “REST Fest 2018 Conference”. Transcript below:</p>
+
+<p><em>“…so storytelling is a super critical part of this. She’s really helped me understand how important it is the Bezos Amazon story how many people have heard or told the, you know, Steve Yagis Bezos mandated API’s across everyone, you know, Moses came down off the mountain and all that stuff. So that’s, you know, that’s a myth. That’s not true. It’s not a true story. It’s half kind of sort of true. But I wrote up that story in January 2010, or 12, excuse me. It does. 2000 page views a week. Still, to this day. It’s number one story on my blog. I still get people emailing me about this. I’ve seen that story framed in a bank in Amsterdam, seeing it framed in an IT group in Sydney, Australia. I’ve seen it on the homepage of IT groups and federal government. It’s an important story, even though it’s not true. Stories. I mean, this is the folklore in the storytelling myths stuff as most of APIs stories are not true. But that’s all right. To a degree but stories are super important.”</em></p>
+
+<p>In case you’re unfamiliar with the “Bezos Amazon story”, you can still read it in his blog post <a href="https://web.archive.org/web/20220701170148/http://apievangelist.com/2012/01/12/the-secret-to-amazons-success-internal-apis/">“The Secret to Amazons Success Internal APIs”</a> or watch his presentation <a href="https://youtu.be/u-ionULluaI?t=478">“The Secret to a Successful API is Internal”</a></p>
+
+<h4 id="youtube">Youtube</h4>
+
+<p>What about his YouTube presence? He owns a YouTube channel called <a href="https://www.youtube.com/channel/UChLC45yh9DTkerV-TSJJo3A">“API Storytelling”</a> (created on Mar 5, 2021) with 59 subscribers and 27 videos uploaded (a total view of less than 1500 as of Aug 2022). His <a href="https://www.youtube.com/c/KinLane/videos">own YouTube channel</a> (created on Aug 13, 2006) has 153 subscribers with 37k views.</p>
+
+<p>He also hosts the show <a href="https://www.youtube.com/watch?v=5xONCEopjy0&amp;list=PLM-7VG-sgbtA5ywMlGAYlPo_PYy6vdJ4O">“Breaking Changes”</a> by Postman in which he interviewed many IT professionals on APIs. Most interviews have 200 to 500 views.</p>
+
+<p>He also did many presentations and interviews such as <a href="https://youtu.be/pibZF049zqE?t=43">the interview with JSON Schema team</a> in which he revealed his executive job title - the Director Of API Infrastructure at F5 Networks, and you can find those with a simple search <a href="https://www.youtube.com/results?search_query=kin+lane">“Kin Lane”</a>.</p>
+
+<p>If you want to be a KOL/influencer in a particular domain, please make sure you maintain a good presence on different social networks to build your audience.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Thanks for taking your time to read through this. I hope you guys have learned something from Kin.</p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://whoisanexpert.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>]]></content><author><name></name></author><category term="learn" /><category term="API" /><summary type="html"><![CDATA[This article illustrates several things we can learn from an API expert. You can apply similar methodologies to learn from experts in other industries as well.]]></summary></entry></feed>
