@@ -121,7 +121,7 @@ _"I feel like I’ve been working on an API PHD for the last 9 years, have finis
 
 This is the first time I heard someone self-studying a PhD. To be clear, I'm not against anyone self-studying a PhD, which is just one of the ways to pursue knowledge. Should he at least get a supervisor mentoring his self-studied Ph.D?
 
-In May 2021, he's one of the [32 computer scientists](https://www.eff.org/cases/oracle-v-google/amici) who signed the [Amicus Brief Filed By EFF In The Oracle vs. Google API Copyright Case](https://www.eff.org/cases/oracle-v-google). In his [TechCrunch article]((https://techcrunch.com/2021/07/01/months-later-were-still-making-sense-of-the-supreme-courts-api-copyright-ruling/)) on the U.S. Supreme Court’s April 5 ruling in Google LLC v. Oracle America Inc.:
+In May 2021, he's one of the [32 computer scientists](https://www.eff.org/cases/oracle-v-google/amici) who signed the [Amicus Brief Filed By EFF In The Oracle vs. Google API Copyright Case](https://www.eff.org/cases/oracle-v-google). In his [TechCrunch article](https://techcrunch.com/2021/07/01/months-later-were-still-making-sense-of-the-supreme-courts-api-copyright-ruling/) on the U.S. Supreme Court’s April 5 ruling in Google LLC v. Oracle America Inc.:
 
 _"I was one of 83 computer scientists — including fiveTuring Awardwinners and four National Medal of Technology honorees — who signed a Supreme Court amicus briefstating their opposition to the assertion that APIs are copyrightable, while also supporting Google’s right to fair use under the current legal definition."_
 
@@ -185,7 +185,7 @@ _"The pre-employment process can take weeks or months depending on the depth of 
 
 Coincidentally the background process may take weeks or months (or 60 days) to complete. Is there by any chance Kin didn't pass the background process when joining PIF?
 
-Here is another interesting finding. Right before he left the PIF program in Oct 2013, he created another GitHub account ["timlandev"](https://web.archive.org/web/20220618021019/https://github.com/timlanedev) on Sep 22, 2013 with the name "Tim Lane".
+Here is another interesting finding. Right before he left the PIF program in Oct 2013, he created another GitHub account ["timlanedev"](https://web.archive.org/web/20220618021019/https://github.com/timlanedev) on Sep 22, 2013 with the name "Tim Lane".
 
 Oh wait, is "Kin Lane" not his birth name? No idea but I'm pretty sure he owns this account as he used "timlanedev" to create a GitHub repository [https://github.com/timlanedev/api-offices](https://web.archive.org/web/20220827074341/https://github.com/timlanedev/api-offices). As show in the commit history (a chronological list of changes), there are changes made directly by "kinlane" (Kin Lane's primary account in GitHub) as shown in the detailed commit logs below and the email address of the author "info@kinlane.com" in the commit log proves my point:
 
@@ -342,7 +342,7 @@ To confirm the search expression works as expected, I searched for changes made 
 
 [![fehguy search](/assets/images/fehguy_search.png)](https://github.com/search?q=org%3Aswagger-api+author%3Afehguy)
 
-Maybe he used another GitHub account to make the contributions? I tried with ["apievangelist"](https://github.com/apievangelist), ["timlandev"](https://github.com/timlandev) but still no luck. I though someone who played a significant role in Swagger's success, at least makes some changes in the Swagger projects but my assumption could be wrong.
+Maybe he used another GitHub account to make the contributions? I tried with ["apievangelist"](https://github.com/apievangelist), ["timlanedev"](https://github.com/timlanedev) but still no luck. I though someone who played a significant role in Swagger's success, at least makes some changes in the Swagger projects but my assumption could be wrong.
 
 Kin heavily uses OpenAPI/Swagger in his projects as one can easily find the API specification files (e.g. swagger.json) in his projects. His [screen capture API](https://github.com/Kin-Lane/screen-capture) is one example and you can find [swagger.json](https://github.com/Kin-Lane/screen-capture/blob/gh-pages/swagger.json) in the root level of the project to describe the API. Even though I am no expert in OpenAPI/Swagger, swagger.json looks pretty easy to understand to me. One suggestion is to use [`security`](https://swagger.io/specification/v2/) to document `appkey` and `appid`, like what he did in another specification file in the ["template-bootstrap"](https://github.com/kinlane/template-bootstrap/blob/master/_data/v1.1/openapi.yaml#L60-L62) project, instead of documenting these as query parameters. One should also validate the specification files in the [CI/CD pipeline](https://www.redhat.com/en/topics/devops/what-cicd-pipeline) to ensure these files are still valid after changes. Providing the following specification files to online validators ([https://editors.swagger.io](https://editors.swagger.io), [https://apitools.dev/swagger-parser/online](https://apitools.dev/swagger-parser/online)) shows a few errors:
 
@@ -459,7 +459,8 @@ You can find [some of his arguments and comments](https://news.ycombinator.com/t
 
 - [RE: it gets 3scale marketing traffic. it doesn't offer anything useful or functional just a viola effect.](https://news.ycombinator.com/item?id=8638382)
 - [RE: This entire post is basically making the point that GitHub is awesome. Seriously? Where have you been? Hey, ever hear about JSON? How this made it to HN is beyond me.](https://news.ycombinator.com/item?id=2400828)
-- [RE: Title (on HN) is a bit misleading - maybe intentionally so, I'm not sure. The linked article refers to "Evrything", a specific service, having an API.](https://news.ycombinator.com/item?id=2595075 - https://news.ycombinator.com/item?id=2351588)
+- [RE: Title (on HN) is a bit misleading - maybe intentionally so, I'm not sure. The linked article refers to "Evrything", a specific service, having an API.](https://news.ycombinator.com/item?id=2595075)
+- [RE:	Amazon shuts down Lendle](https://news.ycombinator.com/item?id=2351588)
 - [RE: Solution for IMAP Headaches Out of Beta (programmableweb.com)](https://news.ycombinator.com/item?id=3383545)
 
 Source: "apievangelist" [submissions](https://news.ycombinator.com/submitted?id=apievangelist), [comments](https://news.ycombinator.com/threads?id=apievangelist) on Hacker News.
